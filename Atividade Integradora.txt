@@ -1,0 +1,64 @@
+Nome: Douglas Faneco de lima
+Ra: 13456.15
+
+Site1: https://www.regexpal.com/
+Site: 2 https://regexr.com/
+
+Expressões regulares
+Metacaracteres: caracteres que possuem significado especial
+Transformam caracteres literais(comuns) em expressões de busca são os seguistes:
+
+/. * + { } [] ^ $ | ? () : ! =
+
+. > Qualquer carácter
+[] > Qualquer carácter definido
+[^] > Nenhum dos caracteres definidos
+* > Nenhum  ou vários caracteres
+^ > verifica se o padrão está no inicio na linha/string a verificar
+$ > verifica se o padrão está no fim na linha/string verificar
+
+Os metacaracteres podem ter mais de um significado, dependendo do contexto de uso.
+OBS: Aspas não são metacaracteres
+
+Caracteres de Escape
+Trata-se de um metacaracteres "\" que indica a mudança no significado outro caractere; transforma um metacaractere em um literal comum.
+
+Classes ou conjuntos de caracteres:
+- são listas de caracteres escritas dentro de colchetes “[ ]” e que servem para corresponder apenas um dos caracteres listados.
+- Permite selecionar um dos caracteres dentro dos colchetes, não importa a ordem.
+ [a-z] – pega todos os caracteres do “a-z minusculo”  
+
+Expressões POSIX
+[[:alpha:]] -> equivale a a-zA-Z
+[[:upper:]] -> A-Z
+[[:lower:]] -> a – z
+[[:0 – 9:]]  -> 0 – 9
+[[:alnum:]] -> 0 – 9a-zA-Z
+[[:space:]] -> espaços
+m[ae]u –> pode pegar tanto “mau” quanto “meu”
+[^] -> acento sincurflexo dentro do  colchetes ele nega a palavra
+
+Metacaracteres – Âncoras 
+- Usando para representar caracteres no inicio ou no final de uma linha.
+Inicio de linha : ^
+final delinha: $
+Localizar linha vazias:  ^$
+
+Repetição de caracteres
+Metacaractere               	Significado
+*				item precedente 0 ou mais vezes
+\+				item precedente uma ou mais vezes
+\?				item precedente 0 ou 1 vez
+
+metacaractere \w = um caractere qualquer
+Repetição  Quantificada: 
+{x} item anterior corresponde exatamente x vezes 
+{x, } item anterior corresponde ao menos x vezes
+ex: {0, 9}{4}, numero de 0 a 9 com 4 caracteres.
+
+Agrupamento de caracteres
+Metacaracteres: ( )
+- permitem agrupar partes de um expressão;
+- Aplicar operadores de repetição a um grupo;
+- Não usar dentro de conjuntos de caracteres, pois tem significado literal lá.
+
