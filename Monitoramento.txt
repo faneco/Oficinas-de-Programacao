@@ -1,0 +1,204 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+<title>Exemplo Imput type = date.</title>
+<title>Controle de interruptor</title>
+</head>
+<body>
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="w3-container w3-grey">
+  <p>
+
+<table class="w3-table">
+<tr>
+  <th><p><input type="date"></p></th>
+  <th><p><center><body onload="time()"</center>
+<div id="txt"></div></p></th>
+
+  <th><right><input class="w3-button w3-red" type="button" value="Desativar Memoria"></right></th>
+</tr>
+<tr>
+  <td>Pagina</td>
+  <td><center><button class="w3-button w3-green">Desligar</button>
+  <button class="w3-button w3-red">Desligar</button></center></td>
+  <td>Os canais que irao reter </td>
+</tr>
+</table>
+
+
+
+
+<script type="text/javascript">
+function time()
+{
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+setTimeout('time()',500);
+}
+
+</script>
+<div class="w3-panel w3-border-left w3-border-blue">
+  <p><body onload="time()">
+<div id="txt"></div></p>
+</div>
+
+<p><center>Monitoramento das entrads/ Tipo de Interruptor</center></p>
+
+</p>
+</div>
+
+ <table class="w3-table-all"> 
+  <thead>
+     <tr class="w3-light-grey w3-hover-red">
+      <th>Canais</th>
+      <th>Acionamento</th>
+      <th>Agendamento</th>
+    </tr>
+</thead>
+    <tr>
+    </thead>
+<tr class="w3-hover-green">
+      <td>Lampada Sala - </td>
+      <td><input class="w3-button w3-black" type="button" value="Ligar">
+<button class="w3-button w3-red">Desligar</button>
+
+</td>
+      <td><input class="w3-button w3-black" type="button" value="Ativar"> <select>
+			<option>Selecione o tempo</option>
+			<option>10-M</option>
+			<option>20-M</option>
+			<option>30-M</option>
+			<option>1-H</option>
+			<option>2-H</option>
+		</select></td>
+    </tr>
+    <tr>
+<tr class="w3-light-grey w3-hover-purple">
+      <td>Lampada Quarto1 - </td>
+      <td><input class="w3-button w3-black" type="button" value="Ligar">
+<button class="w3-button w3-red">Desligar</button>
+
+</td>
+      <td><input class="w3-button w3-black" type="button" value="Ativar"> <select>
+			<option>Selecione o tempo</option>
+			<option>10-M</option>
+			<option>20-M</option>
+			<option>30-M</option>
+			<option>1-H</option>
+			<option>2-H</option>
+		</select></td>
+    </tr>
+    <tr>
+<tr class="w3-light-grey w3-hover-indigo">
+    <td>Lampada Quarto2 - </td>
+      <td><input class="w3-button w3-black" type="button" value="Ligar">
+<button class="w3-button w3-red">Desligar</button>
+
+</td>
+      <td><input class="w3-button w3-black" type="button" value="Ativar"> <select>
+			<option>Selecione o tempo</option>
+			<option>10-M</option>
+			<option>20-M</option>
+			<option>30-M</option>
+			<option>1-H</option>
+			<option>2-H</option>
+		</select></td>
+    </tr>
+    <tr>
+<tr class="w3-light-grey w3-hover-aqua">
+<td>Lampada Banheiro - </td>
+      <td><input class="w3-button w3-black" type="button" value="Ligar">
+<button class="w3-button w3-red">Desligar</button>
+
+</td>
+      <td><input class="w3-button w3-black" type="button" value="Ativar"> <select>
+			<option>Selecione o tempo</option>
+			<option>10-M</option>
+			<option>20-M</option>
+			<option>30-M</option>
+			<option>1-H</option>
+			<option>2-H</option>
+		</select></td>
+    </tr>
+    <tr>
+<tr class="w3-light-grey w3-hover-green">
+<td> - Tomada Quarto1 </td>
+      <td><input class="w3-button w3-black" type="button" value="Ligar">
+<button class="w3-button w3-red">Desligar</button>
+
+</td>
+      <td><input class="w3-button w3-black" type="button" value="Ativar"> <select>
+			<option>Selecione o tempo</option>
+			<option>10-M</option>
+			<option>20-M</option>
+			<option>30-M</option>
+			<option>1-H</option>
+			<option>2-H</option>
+		</select></td>
+    </tr>
+    <tr>
+<tr class="w3-light-grey w3-hover-lime">
+<td>Tomada Quarto2 - </td>
+      <td><input class="w3-button w3-black" type="button" value="Ligar">
+<button class="w3-button w3-red">Desligar</button>
+
+</td>
+      <td><input class="w3-button w3-black" type="button" value="Ativar"> <select>
+			<option>Selecione o tempo</option>
+			<option>10-M</option>
+			<option>20-M</option>
+			<option>30-M</option>
+			<option>1-H</option>
+			<option>2-H</option>
+		</select></td>
+    </tr>
+    <tr>
+<tr class="w3-light-grey w3-hover-khaki">
+<td>Tomada Cozinha - </td>
+      <td><input class="w3-button w3-black" type="button" value="Ligar">
+<button class="w3-button w3-red">Desligar</button>
+
+</td>
+      <td><input class="w3-button w3-black" type="button" value="Ativar"> <select>
+			<option>Selecione o tempo</option>
+			<option>10-M</option>
+			<option>20-M</option>
+			<option>30-M</option>
+			<option>1-H</option>
+			<option>2-H</option>
+		</select></td>
+    </tr>
+    <tr>
+<tr class="w3-light-grey w3-hover-amber">
+<td>Tomada Sala - </td>
+      <td><input class="w3-button w3-black" type="button" value="Ligar">
+<button class="w3-button w3-red">Desligar</button>
+
+</td>
+      <td><input class="w3-button w3-black" type="button" value="Ativar"> <select>
+			<option>Selecione o tempo</option>
+			<option>10-M</option>
+			<option>20-M</option>
+			<option>30-M</option>
+			<option>1-H</option>
+			<option>2-H</option>
+		</select></td>
+    </tr>
+    <tr>
+  </table>
+</div>
+
+
+<h1><center>Controle de interruptor</center></h1>
+
+
+
+</body>
+</html> 
